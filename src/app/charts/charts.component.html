@@ -1,0 +1,111 @@
+<div class="container-fluid">
+  <div class="row chart-row">
+    <div class="col-md-3">
+      <mat-card>
+        <!-- Code for Line Chart -->
+        <h4 class="chart-heading"><strong>{{'Line Chart'|translate}}</strong></h4>
+        <div style="display: block;">
+          <canvas baseChart width="400" height="400" [datasets]="lineChartData" [labels]="lineChartLabels"
+            [options]="lineChartOptions" [colors]="lineChartColors" [legend]="lineChartLegend"
+            [chartType]="lineChartType" [plugins]="lineChartPlugins">
+          </canvas>
+        </div>
+      </mat-card>
+    </div>
+    <div class="col-md-3">
+      <mat-card>
+        <!-- Code for Bar Chart -->
+        <h4 class="chart-heading"><strong>{{'Bar Chart'|translate}}</strong></h4>
+        <div style="display: block;">
+          <canvas baseChart width="400" height="400" [datasets]="barChartData" [labels]="barChartLabels"
+            [options]="barChartOptions" [plugins]="barChartPlugins" [legend]="barChartLegend"
+            [chartType]="barChartType">
+          </canvas>
+        </div>
+      </mat-card>
+    </div>
+    <div class="col-md-3">
+      <mat-card>
+        <!-- Code for Doughnut Chart -->
+        <h4 class="chart-heading"><strong>{{'Doughnut Chart'|translate}}</strong></h4>
+        <div style="display: block;">
+          <canvas baseChart width="400" height="400" [data]="doughnutChartData" [labels]="doughnutChartLabels"
+            [chartType]="doughnutChartType">
+          </canvas>
+        </div>
+      </mat-card>
+    </div>
+    <div class="col-md-3">
+      <mat-card>
+        <!-- Code for Piechart Chart -->
+        <h4 class="chart-heading"><strong>{{'Pie Chart'|translate}}</strong></h4>
+        <div style="display: block;">
+          <canvas baseChart width="400" height="400" [data]="pieChartData" [labels]="pieChartLabels"
+            [chartType]="pieChartType" [options]="pieChartOptions" [plugins]="pieChartPlugins"
+            [legend]="pieChartLegend">
+          </canvas>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+  <div class="row chart-row">
+    <div class="col-md-3">
+      <mat-card>
+        <!-- Code for Radar Chart -->
+        <h4 class="chart-heading"><strong>{{'Radar Chart'|translate}}</strong></h4>
+        <div style="display: block;">
+          <canvas baseChart width="400" height="400" [datasets]="radarChartData" [options]="radarChartOptions"
+            [labels]="radarChartLabels" [chartType]="radarChartType">
+          </canvas>
+        </div>
+      </mat-card>
+    </div>
+    <div class="col-md-3">
+      <mat-card>
+        <!-- Code for Polar Area Chart -->
+        <h4 class="chart-heading"><strong>{{'Polar Area Chart'|translate}}</strong></h4>
+        <div style="display: block;">
+          <canvas baseChart width="400" height="400" [data]="polarAreaChartData" [labels]="polarAreaChartLabels"
+            [legend]="polarAreaLegend" [chartType]="polarAreaChartType">
+          </canvas>
+        </div>
+      </mat-card>
+    </div>
+    <div class="col-md-3">
+      <mat-card>
+        <!-- Code for Bubble Chart -->
+        <h4 class="chart-heading"><strong>{{'Bubble Chart'|translate}}</strong></h4>
+        <div style="display: block;">
+          <canvas baseChart width="400" height="400" [datasets]="bubbleChartData" [options]="bubbleChartOptions"
+            [legend]="bubbleChartLegend" [chartType]="bubbleChartType">
+          </canvas>
+        </div>
+      </mat-card>
+    </div>
+    <div class="col-md-3">
+      <mat-card>
+        <!-- Code for Scatter Chart -->
+        <h4 class="chart-heading"><strong>{{'Scatter Chart'|translate}}</strong></h4>
+        <div style="display: block;">
+          <canvas baseChart width="400" height="400" [datasets]="scatterChartData" [options]="scatterChartOptions"
+            [chartType]="scatterChartType">
+          </canvas>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <mat-card>
+        <!-- Code for Dynamic Chart -->
+        <h4 class="chart-heading"><strong>{{'Dynamic Chart'|translate}}</strong></h4>
+        <div style="display: block;">
+          <canvas baseChart width="400" height="400" [datasets]="barChartData" [labels]="barChartLabels"
+            [options]="barChartOptions" [plugins]="barChartPlugins" [legend]="barChartLegend"
+            [chartType]="barChartType">
+          </canvas>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>

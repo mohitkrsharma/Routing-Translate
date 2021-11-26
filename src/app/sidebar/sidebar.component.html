@@ -1,0 +1,42 @@
+<mat-sidenav-container class="tp-container">
+  <mat-sidenav mode="side" opened>
+    <section class="tp-section">
+      <span class="material-icons">
+        show_chart
+      </span>
+      <span (click)="show('charts')" value="charts">{{'Charts'|translate}}</span>
+    </section>
+    <section class="tp-section">
+      <span class="material-icons">
+        table_view
+      </span>
+      <span (click)="show('table')" value="table">{{'Tables'|translate}}</span>
+    </section>
+    <section class="tp-section">
+      <span class="material-icons">
+        language
+      </span>
+      <select name="cars" id="cars" (change)="setLanguage(selectedLang.value)" #selectedLang
+        [(ngModel)]="dropdownValue">
+        <option value="en">English</option>
+        <option value="fr">French</option>
+        <option value="nl">German</option>
+        <option value="jp">Japanese</option>
+      </select>
+    </section>
+    <section class="tp-section">
+      <span class="material-icons">
+        dialpad
+      </span>
+      <span (click)="show('contact-us')" value="table">{{'Contact Us'|translate}}</span>
+    </section>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <app-charts *ngIf="currentView ==='charts'"></app-charts>
+    <app-table *ngIf="currentView ==='table'"></app-table>
+    <app-contact-us *ngIf="currentView ==='contact-us'"></app-contact-us>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<ngx-spinner type="square-jelly-box" size="medium">
+  <p class="loader-message"> {{'Loading...'|translate}} </p>
+</ngx-spinner>

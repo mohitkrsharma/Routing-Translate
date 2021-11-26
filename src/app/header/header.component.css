@@ -1,0 +1,38 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+mat-toolbar {
+  background-color: #3f51b5;
+}
+span {
+  color: #fff;
+}
+.right-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+.logout {
+  font-weight: lighter;
+}
+.button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.logout-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.hi {
+  font-weight: lighter;
+}

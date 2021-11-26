@@ -1,0 +1,113 @@
+.container-fluid {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #414a50;
+}
+.main-content-div {
+  display: flex;
+  gap: 60px;
+  margin-top: 30px;
+}
+.contact-form-div {
+  width: 50%;
+  box-sizing: border-box;
+}
+.contact-us-div {
+  width: 50%;
+}
+.contact {
+  font-size: 48px;
+  padding: 20px;
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  text-align: center;
+}
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  letter-spacing: 3px;
+}
+.opac-color {
+  opacity: 0.8;
+  color: #fff;
+}
+.heart {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.open-minded {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+.common {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.material-icons {
+  color: #fff;
+}
+p {
+  color: #fff;
+}
+a:link {
+  text-decoration: none;
+  color: #fff;
+}
+input {
+  margin-bottom: 5px;
+}
+textarea {
+  margin-bottom: 5px;
+}
+.alert {
+  color: orangered;
+  font-weight: bold;
+}
+.mob {
+  color: #fff;
+}
+hr {
+  color: #fff;
+}
+.social-icons-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+i {
+  color: #fff;
+  font-size: 30px;
+}
+.button-div {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.send {
+  width: 150px;
+  color: #fff;
+  background-color: #414a50;
+  border: 1px solid #fff;
+}
+.message-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.message-sent {
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  letter-spacing: 5px;
+}

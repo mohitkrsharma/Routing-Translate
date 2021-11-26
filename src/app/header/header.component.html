@@ -1,0 +1,18 @@
+<mat-toolbar>
+  <span>{{'Angular Concepts'|translate}}</span>
+  <span class="example-spacer"></span>
+  <div class="right-div">
+    <div class="name-div">
+      <span class="material-icons">
+        account_circle
+      </span>
+      <span class="hi">{{'Hi'|translate}}, {{getName}}</span>
+    </div>
+    <div class="logout-div">
+      <span class="material-icons" matTooltip="Logout" matTooltipPosition="below" (click)="openDialog()">
+        logout
+      </span>
+      <span class="logout">{{'Logout'|translate}}</span>
+    </div>
+  </div>
+</mat-toolbar>

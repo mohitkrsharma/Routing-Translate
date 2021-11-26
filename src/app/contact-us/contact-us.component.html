@@ -1,0 +1,79 @@
+<div class="container-fluid">
+  <div class="content-div">
+    <h1 class="contact opac-color">{{'Contact Us'|translate}}</h1>
+    <hr>
+    <p class="description opac-color">{{'I would'|translate}} <span class="material-icons heart">
+        favorite_border
+      </span>{{'to help !'|translate}}</p>
+    <p class="opac-color open-minded">{{'I like to create things with fun,open-minded people, feel free to say hello
+      !'|translate}}</p>
+
+    <div class="main-content-div">
+      <div class="contact-form-div">
+        <form [formGroup]="contactForm">
+          <input type="text" class="form-control" placeholder="{{'Your Name'|translate}}" formControlName="name"
+            [ngStyle]="{'border': (contactForm.controls['name'].invalid && (contactForm.controls['name'].dirty || contactForm.controls['name'].touched)) ? '1px solid orangered' : ''}">
+          <span
+            *ngIf="contactForm.controls['name'].invalid && (contactForm.controls['name'].dirty || contactForm.controls['name'].touched)"
+            class="alert">
+            {{'*Please Enter a name'|translate}}
+          </span>
+          <input type="email" class="form-control" placeholder="{{'Email'|translate}}" formControlName="email"
+            [ngStyle]="{'border': (contactForm.controls['email'].invalid && (contactForm.controls['email'].dirty || contactForm.controls['email'].touched)) ? '1px solid orangered' : ''}">
+          <span
+            *ngIf="contactForm.controls['email'].invalid && (contactForm.controls['email'].dirty || contactForm.controls['email'].touched)"
+            class="alert">
+            {{'*Please Enter a valid email'|translate}}
+          </span>
+          <textarea cols="30" rows="10" class="form-control" placeholder="{{'Message'|translate}}"
+            formControlName="message"
+            [ngStyle]="{'border': (contactForm.controls['message'].invalid && (contactForm.controls['message'].dirty || contactForm.controls['message'].touched)) ? '1px solid orangered' : ''}"></textarea>
+          <span
+            *ngIf="contactForm.controls['message'].invalid && (contactForm.controls['message'].dirty || contactForm.controls['message'].touched)"
+            class="alert">
+            {{'*Please Enter a message'|translate}}
+          </span>
+
+        </form>
+        <div class="button-div">
+          <button mat-raised-button [disabled]="contactForm.valid ? false: true" class="send"
+            [ngStyle]="{'color': (contactForm.controls['message'].invalid && (contactForm.controls['message'].dirty || contactForm.controls['message'].touched)) ? '#fff' : '#fff'}"
+            (click)="sendMessage()">{{'Send'|translate}}</button>
+        </div>
+        <div class="message-div">
+          <span *ngIf="isSent" class="message-sent">Message sent !</span>
+        </div>
+      </div>
+      <div class="contact-us-div">
+        <div class="common">
+          <span class="material-icons">
+            location_on
+          </span>
+          <div>
+            <p>Mohit Kumar Sharma</p>
+            <p>Faridabad, Haryana, IN</p>
+          </div>
+        </div>
+        <div class="common">
+          <span class="material-icons">
+            phone
+          </span>
+          <span class="mob">+91-7011059726</span>
+        </div>
+        <div class="common">
+          <span class="material-icons">
+            email
+          </span>
+          <p>mohits.sharma2@gmail.com</p>
+        </div>
+        <hr>
+        <div class="social-icons-div">
+          <a href="https://www.facebook.com/mohit.sharma.921" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://linkedin.com/in/mohitkumarsharma1" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/mohitkumarsharma959" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.snapchat.com/mohit.enfield" target="_blank"><i class="fab fa-snapchat-ghost"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
