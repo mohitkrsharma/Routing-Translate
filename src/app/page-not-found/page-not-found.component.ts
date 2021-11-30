@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-page-not-found',
@@ -7,9 +8,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./page-not-found.component.css'],
 })
 export class PageNotFoundComponent implements OnInit {
-  constructor(private router: Router) {}
+  currentLanguage: any;
+  constructor(private router: Router, private translate: TranslateService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.currentLanguage = localStorage.getItem('language');
+    if (this.currentLanguage === null || this.currentLanguage === '') {
+      this.translate.use('en');
+    } else {
+      this.translate.use(this.currentLanguage);
+    }
+  }
   goHome() {
     this.router.navigate(['login']);
   }
