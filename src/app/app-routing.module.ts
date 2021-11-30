@@ -4,6 +4,7 @@ import { AuthGuard } from './auth.guard';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { TableComponent } from './table/table.component';
 
 const routes: Routes = [
@@ -30,6 +31,10 @@ const routes: Routes = [
     path: 'contact-us',
     component: ContactUsComponent,
     canActivate: [AuthGuard],
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponent,
   },
 ];
 

@@ -111,3 +111,22 @@ i {
   font-weight: bold;
   letter-spacing: 5px;
 }
+
+/* CSS MEDIA QUERIES FOR RESPONSIVENESS */
+@media only screen and (max-width: 768px) and (min-width: 501px) {
+  /* CSS apply on width between 501px and 600px */
+  .contact {
+    font-size: 32px;
+    padding: 20px;
+    font-family: "Merriweather", serif;
+    font-weight: bold;
+    text-align: center;
+  }
+  .open-minded {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+}

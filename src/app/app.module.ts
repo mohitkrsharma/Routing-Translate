@@ -37,6 +37,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { getMatPaginatorIntl } from './mat-paginator-intl';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 export function TranslationLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -51,6 +52,7 @@ export function TranslationLoaderFactory(http: HttpClient) {
     TableComponent,
     LogoutDialogComponent,
     ContactUsComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
