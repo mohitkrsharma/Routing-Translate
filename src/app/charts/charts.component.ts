@@ -34,7 +34,6 @@ export class ChartsComponent implements OnInit {
     } else {
       this.translate.use(this.currentLanguage);
     }
-    // this.translate.use(this.currentLanguage);
 
     // Testing 1
     this.translate.get('Charts').subscribe((res: any) => {
@@ -48,6 +47,7 @@ export class ChartsComponent implements OnInit {
       })
     );
   }
+
   public lineChartData: ChartDataSets[] = [
     { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
     { data: [34, 37, 56, 23, 52, 36, 64], label: 'Series B' },
@@ -65,10 +65,6 @@ export class ChartsComponent implements OnInit {
     'Telesales',
     'Corporate Sales',
   ];
-  public doughnutChartType: ChartType = 'doughnut';
-  public polarAreaChartData: SingleDataSet = [300, 500, 100, 40, 120];
-  public polarAreaLegend = true;
-  public polarAreaChartType: ChartType = 'polarArea';
   public lineChartLabels: Label[] = [
     'January',
     'February',
@@ -100,19 +96,14 @@ export class ChartsComponent implements OnInit {
     { data: [65, 59, 90, 81, 56, 55, 40], label: 'Series A' },
     { data: [28, 48, 40, 19, 96, 27, 100], label: 'Series B' },
   ];
-  // scatter
-  public scatterChartOptions: ChartOptions = {
-    responsive: true,
-  };
-  public radarChartType: ChartType = 'radar';
   public barChartData: ChartDataSets[] = [
     { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
     { data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B' },
   ];
-  public doughnutChartData: MultiDataSet = [
-    [350, 450, 100],
-    [50, 150, 120],
-    [250, 130, 70],
+  public pieChartLabels: Label[] = [
+    ['Download', 'Sales'],
+    ['In', 'Store', 'Sales'],
+    'Mail Sales',
   ];
   public scatterChartData: ChartDataSets[] = [
     {
@@ -127,6 +118,34 @@ export class ChartsComponent implements OnInit {
       pointRadius: 10,
     },
   ];
+  public bubbleChartData: ChartDataSets[] = [
+    {
+      data: [
+        { x: 10, y: 10, r: 10 },
+        { x: 15, y: 5, r: 15 },
+        { x: 26, y: 12, r: 23 },
+        { x: 7, y: 8, r: 8 },
+      ],
+      label: 'Series A',
+    },
+  ];
+  public doughnutChartType: ChartType = 'doughnut';
+  public polarAreaChartData: SingleDataSet = [300, 500, 100, 40, 120];
+  public polarAreaLegend = true;
+  public polarAreaChartType: ChartType = 'polarArea';
+
+  // scatter
+  public scatterChartOptions: ChartOptions = {
+    responsive: true,
+  };
+  public radarChartType: ChartType = 'radar';
+
+  public doughnutChartData: MultiDataSet = [
+    [350, 450, 100],
+    [50, 150, 120],
+    [250, 130, 70],
+  ];
+
   public scatterChartType: ChartType = 'scatter';
   public barChartType: any = 'bar';
   public barChartLegend = true;
@@ -149,11 +168,7 @@ export class ChartsComponent implements OnInit {
       backgroundColor: 'rgba(255,0,0,0.3)',
     },
   ];
-  public pieChartLabels: Label[] = [
-    ['Download', 'Sales'],
-    ['In', 'Store', 'Sales'],
-    'Mail Sales',
-  ];
+
   public bubbleChartOptions: ChartOptions = {
     responsive: true,
     scales: {
@@ -177,17 +192,7 @@ export class ChartsComponent implements OnInit {
   };
   public bubbleChartType: ChartType = 'bubble';
   public bubbleChartLegend = true;
-  public bubbleChartData: ChartDataSets[] = [
-    {
-      data: [
-        { x: 10, y: 10, r: 10 },
-        { x: 15, y: 5, r: 15 },
-        { x: 26, y: 12, r: 23 },
-        { x: 7, y: 8, r: 8 },
-      ],
-      label: 'Series A',
-    },
-  ];
+
   // events
   public chartClicked({
     event,
