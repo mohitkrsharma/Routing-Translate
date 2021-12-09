@@ -37,7 +37,7 @@
         </form>
         <div class="button-div">
           <button mat-raised-button [disabled]="contactForm.valid ? false: true" class="send"
-            [ngStyle]="{'color': (contactForm.controls['message'].invalid && (contactForm.controls['message'].dirty || contactForm.controls['message'].touched)) ? '#fff' : '#fff'}"
+            [ngStyle]="{'color': (contactForm.controls['message'].invalid && (contactForm.controls['message'].dirty || contactForm.controls['message'].touched)) ? '#495057' : '#fff'}"
             (click)="sendMessage()">{{'Send'|translate}}</button>
         </div>
         <div class="message-div">
@@ -68,10 +68,14 @@
         </div>
         <hr>
         <div class="social-icons-div">
-          <a href="https://www.facebook.com/mohit.sharma.921" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://linkedin.com/in/mohitkumarsharma1" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://www.instagram.com/mohitkumarsharma959" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.snapchat.com/mohit.enfield" target="_blank"><i class="fab fa-snapchat-ghost"></i></a>
+          <a href="https://www.facebook.com/mohit.sharma.921" target="_blank"><i class="fab fa-facebook-f facebook"
+              title="Facebook"></i></a>
+          <a href="https://linkedin.com/in/mohitkumarsharma1" target="_blank"><i class="fab fa-linkedin linkedin"
+              title="Linkedin"></i></a>
+          <a href="https://www.instagram.com/mohitkumarsharma959" target="_blank"><i class="fab fa-instagram instagram"
+              title="Instagram"></i></a>
+          <a href="https://www.snapchat.com/mohit.enfield" target="_blank"><i class="fab fa-snapchat-ghost snapchat"
+              title="Snapchat"></i></a>
         </div>
       </div>
     </div>

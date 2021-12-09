@@ -3,7 +3,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #414a50;
+  background-color: #e9ecef;
 }
 .main-content-div {
   display: flex;
@@ -33,7 +33,7 @@
 }
 .opac-color {
   opacity: 0.8;
-  color: #fff;
+  color: #495057;
 }
 .heart {
   margin-left: 5px;
@@ -52,14 +52,14 @@
   padding: 20px;
 }
 .material-icons {
-  color: #fff;
+  color: #495057;
 }
 p {
-  color: #fff;
+  color: #495057;
 }
 a:link {
   text-decoration: none;
-  color: #fff;
+  color: #495057;
 }
 input {
   margin-bottom: 5px;
@@ -72,10 +72,10 @@ textarea {
   font-weight: bold;
 }
 .mob {
-  color: #fff;
+  color: #495057;
 }
 hr {
-  color: #fff;
+  color: #495057;
 }
 .social-icons-div {
   display: flex;
@@ -84,8 +84,20 @@ hr {
   gap: 50px;
 }
 i {
-  color: #fff;
+  color: #495057;
   font-size: 30px;
+}
+.facebook:hover {
+  color: #1864ab;
+}
+.linkedin:hover {
+  color: #339af0;
+}
+.instagram:hover {
+  color: #e03131;
+}
+.snapchat:hover {
+  color: #ffd43b;
 }
 .button-div {
   margin-top: 25px;
@@ -95,9 +107,9 @@ i {
 }
 .send {
   width: 150px;
-  color: #fff;
-  background-color: #414a50;
-  border: 1px solid #fff;
+  color: #495057;
+  background-color: #9775fa;
+  border: 1px solid #9775fa;
 }
 .message-div {
   display: flex;
@@ -106,7 +118,7 @@ i {
   margin-top: 10px;
 }
 .message-sent {
-  color: #fff;
+  color: #495057;
   display: block;
   font-weight: bold;
   letter-spacing: 5px;

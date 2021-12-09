@@ -72,7 +72,6 @@ export class TableComponent implements AfterViewInit, OnInit {
     } else {
       this.translate.use(this.currentLanguage);
     }
-    // this.translate.use(this.currentLanguage);
   }
 
   ngAfterViewInit() {
